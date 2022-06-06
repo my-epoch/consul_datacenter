@@ -1,0 +1,29 @@
+{
+  "node_name": "consul-server",
+  "ui_config": {
+    "enabled": true
+  },
+  "server": true,
+  "data_dir": "/consul/data",
+  "addresses": {
+    "http": "172.20.0.5",
+    "dns": "172.20.0.5"
+  },
+  "ports": {
+    "dns": 53
+  },
+  "bootstrap_expect": 1,
+  "encrypt": "Vdz7qVZ+Vcurf0Jct4E2T1iSJoRTF+rtwZZY4eJGN+g=",
+  "tls": {
+    "internal_rpc": {
+      "verify_server_hostname": true
+    },
+    "defaults": {
+      "verify_incoming": true,
+      "verify_outgoing": true,
+      "ca_file": "/consul/config/certs/consul-agent-ca.pem",
+      "cert_file": "/consul/config/certs/dc1-server-consul-0.pem",
+      "key_file": "/consul/config/certs/dc1-server-consul-0-key.pem"
+    }
+  }
+}
