@@ -22,7 +22,7 @@ cp config/consul-client.example.json config/consul-client.json
 3. By running `consul keygen` generate gossip encryption key and replace `YOUR_ENCRYPTION_KEY_HERE` by your key
    in `config/consul-client.json` and `config/consul-client.json`
 
-### Running
+## Running
 
 In the root directory run
 
@@ -32,6 +32,6 @@ docker compose up
 
 and it's all
 
-### Additional information
+## Additional information
 
 * Consul documentation https://www.consul.io/docs
